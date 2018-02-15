@@ -1,0 +1,8 @@
+.clock { width: 200px; height: 200px; font-size: 100px; color:#fff; 
+background-color: brown; text-align: center; line-height: 200px; 
+transition: all 1s linear;
+}
+
+.clock.active { transform: translateX(200px);}
+
+.button { margin-top: 10px;}

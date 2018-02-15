@@ -1,0 +1,54 @@
+*{margin:0; padding: 0;}
+li { list-style: none; }
+.slider {
+    width:700px; height: 450px; margin: 50px auto 10px;
+    border:5px solid #000;
+    
+}
+
+.item { width: 3500px; }
+.item li { width: 700px; height: 450px; opacity: .6; float: left; }
+.item li:nth-child(1) { background-color: dodgerblue; }
+.item li:nth-child(2) { background-color: firebrick; }
+.item li:nth-child(3) { background-color: gold; }
+.item li:nth-child(4) { background-color: seagreen; }
+.item li:nth-child(5) { background-color: lightblue;}
+
+
+.btn { text-align: center; }
+button { padding:10px 20px; }
+
+.page { text-align: center; margin-bottom: 20px; }
+.page div { display: inline-block; width: 14px; height: 14px; 
+    border-radius: 50%; background: #ddd; }
+
+/* 자동 슬라이드 
+정지(3초) -> 슬라이드 이동 (1초) -> 정지(3초-2번째 슬라이드) -> ..맨앞으로 이동(1초) */
+
+/*
+.item { animation: slider 20s linear infinite; }
+.slider { overflow: hidden; }
+.slider:hover .item{ animation-play-state: paused; }
+
+@keyframes slider {
+    
+    0% { transform : translateX(0px); }
+    15% { transform : translateX(0px); }
+    
+    20% { transform : translateX(-700px); }
+    35% { transform : translateX(-700px); }
+    
+    40% { transform: translateX(-1400px); }
+    55% { transform: translateX(-1400px); }
+    
+    60% { transform: translateX(-2100px); }
+    75% { transform: translateX(-2100px); }
+    
+    80% { transform: translateX(-2800px); }
+    95% { transform: translateX(-2800px); }
+    
+    100% { transform: translateX(0px); }
+}
+*/
+
+.page div.active { background-color: yellowgreen;}
